@@ -1,0 +1,81 @@
+﻿@model IEnumerable<KeyboardHub.Models.Switch>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Color)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Type)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AccuationForce)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TouchAudio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TouchOringAudio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BottomAudio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BottomOringAudio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GIFPath)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Color)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Type)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AccuationForce)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TouchAudio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TouchOringAudio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BottomAudio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BottomOringAudio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GIFPath)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.SwitchID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.SwitchID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.SwitchID })
+        </td>
+    </tr>
+}
+
+</table>

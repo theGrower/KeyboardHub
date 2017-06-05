@@ -1,0 +1,96 @@
+﻿@model KeyboardHub.Models.Switch
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Switch</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Color)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Color)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Type)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Type)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AccuationForce)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AccuationForce)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TouchAudio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TouchAudio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TouchOringAudio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TouchOringAudio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BottomAudio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BottomAudio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BottomOringAudio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BottomOringAudio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GIFPath)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GIFPath)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

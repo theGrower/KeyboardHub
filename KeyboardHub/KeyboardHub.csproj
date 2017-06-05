@@ -170,8 +170,11 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\FavoritesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\SwitchesController.cs" />
+    <Compile Include="Controllers\UserDetailsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -244,6 +247,21 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Favorites\Create.cshtml" />
+    <Content Include="Views\Favorites\Delete.cshtml" />
+    <Content Include="Views\Favorites\Details.cshtml" />
+    <Content Include="Views\Favorites\Edit.cshtml" />
+    <Content Include="Views\Favorites\Index.cshtml" />
+    <Content Include="Views\Switches\Create.cshtml" />
+    <Content Include="Views\Switches\Delete.cshtml" />
+    <Content Include="Views\Switches\Details.cshtml" />
+    <Content Include="Views\Switches\Edit.cshtml" />
+    <Content Include="Views\Switches\Index.cshtml" />
+    <Content Include="Views\UserDetails\Create.cshtml" />
+    <Content Include="Views\UserDetails\Delete.cshtml" />
+    <Content Include="Views\UserDetails\Details.cshtml" />
+    <Content Include="Views\UserDetails\Edit.cshtml" />
+    <Content Include="Views\UserDetails\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

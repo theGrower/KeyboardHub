@@ -1,0 +1,90 @@
+﻿@model KeyboardHub.Models.Switch
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Switch</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Color)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Color)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Type)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Type)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AccuationForce)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AccuationForce)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TouchAudio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TouchAudio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TouchOringAudio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TouchOringAudio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BottomAudio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BottomAudio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BottomOringAudio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BottomOringAudio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GIFPath)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GIFPath)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.SwitchID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
