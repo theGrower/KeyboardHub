@@ -1,101 +1,24 @@
 ﻿body {
-		padding-top: 50px;
-	padding-bottom: 20px;
-	background: url("https://i.imgur.com/VJ1Ktfe.jpg") no-repeat center center fixed; 
-	background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 20px;
 }
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
-	padding-left: 15px;
-	padding-right: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
    will truncate terms that are too long to fit in the left column 
 */
 .dl-horizontal dt {
-	white-space: normal;
+    white-space: normal;
 }
 
 /* Set width on the form input elements since they're 100% wide by default */
 input,
 select,
 textarea {
-	max-width: 280px;
-}
-.header-color{
-	color: #FFF;
-}
-.vertical-text{
-	transform: rotate(270deg);
-	float: left;
-}
-div[class="row"] {
-	border: 1px dotted rgba(0, 0, 0, 0.5);
-}
-
-div[class^="col-"] {
-	/*REMOVE ME*/
-	background-color: rgba(255, 0, 0, 0.2);
-	border: 1px dotted rgba(0, 0, 0, 0.5);
-}
-.grid-titles{
-	text-align: center;
-	color: #FFF;
-	font-weight: bold;
-}
-.text-bold{
-	font-weight:bold;
-}
-.big-font{
-	font-size: 8em;
-}
-.scalable{
-	max-height: 100%;
-	width:auto;
-}
-#p2{
-	margin-top:35px;
-	max-height:500px;
-	width: auto;
-}
-#p1{
-	height:120%;
-	width: auto;
-}
-img{
-	display:block;
-	width: 100%;
-	height: auto;
-}
-.row{
-	overflow: hidden; 
-}
-
-[class*="col-"]{
-	margin-bottom: -99999px;
-	padding-bottom: 99999px;
-}
-#InnerP1{
-	padding-bottom: 25%;
-	padding-top: 15%;
-}
-.navbar-nav > li > a, .navbar-brand {
-	padding-top:5px !important; padding-bottom:0px !important;
-	height: 30px;
-}
-.navbar {min-height:30px !important;}
-@media (max-width: 767px) {
-	#Spacer {
-		padding: 30%;
-	}
-}
-@media (min-width: 767px){
-	#homeLink {
-		display: none;
-	}
-	#Spacer {
-		margin-bottom: 45px;
-	}
+    max-width: 280px;
 }
