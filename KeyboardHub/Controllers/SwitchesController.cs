@@ -16,9 +16,18 @@ namespace KeyboardHub.Controllers
         private KeyboardHubDB db = new KeyboardHubDB();
 
         // GET: Switches
-        public async Task<ActionResult> Index()
+        public async Task<ActionResult> Index(int? id)
         {
-            return View(await db.Switches.ToListAsync());
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            Switch @switch = await db.Switches.FindAsync(id);
+            if (@switch == null)
+            {
+                return HttpNotFound();
+            }
+            return View(@switch);
         }
 
         // GET: Switches/Details/5

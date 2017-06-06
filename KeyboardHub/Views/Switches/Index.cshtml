@@ -1,81 +1,33 @@
-﻿@model IEnumerable<KeyboardHub.Models.Switch>
+﻿@model KeyboardHub.Models.Switch
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Cherry MX " + Model.Color;
 }
-
-<h2>Index</h2>
-
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Color)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Type)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.AccuationForce)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Description)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.TouchAudio)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.TouchOringAudio)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.BottomAudio)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.BottomOringAudio)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.GIFPath)
-        </th>
-        <th></th>
-    </tr>
-
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Color)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Type)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.AccuationForce)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Description)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.TouchAudio)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.TouchOringAudio)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.BottomAudio)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.BottomOringAudio)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.GIFPath)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.SwitchID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.SwitchID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.SwitchID })
-        </td>
-    </tr>
-}
-
-</table>
+@* TODO: WRITE JAVASCRIPT FOR HOVER NOISE
+    WRITE JAVASCRIPT FOR HOVER ANIMATION
+    FAVORITES UNDER GRID*@
+<div>
+    <div class="jumbotron"><h1 class="grid-titles">Cherry MX @Model.Color</h1></div>
+    <h2 class="grid-titles">@Model.Description</h2>
+</div>
+<h3 class="grid-titles">Hover over the keys to hear how they sound when pressed!</h3>
+<div id="switchtable">
+    <div class="row">
+        <div class="col-xs-3">
+            <img src="~/Content/Images/Placeholder.png" class="img-circle img-responsive hover-bottom-out" />
+            <div class="header-color">The @Model.Color switch will sound like this when the keys are bottomed out, or pressed all the way until the keycaps hit the bottom plate.</div>
+        </div>
+        <div class="col-xs-3">
+            <img src="~/Content/Images/Placeholder.png" class="img-circle img-responsive hover-touch-type" />
+            <div class="header-color">The @Model.Color switch will sound like this when the keys are touch-typed, or pressed only with as much force as needed to activate the key.</div>
+        </div>
+        <div class="col-xs-3">
+            <img src="~/Content/Images/Placeholder.png" class="img-circle img-responsive hover-bottom-out-oring" />
+            <div class="header-color">The @Model.Color switch will sound like this when the keys are bottomed out, but with an O-ring installed to dampen the noise.</div>
+        </div>
+        <div class="col-xs-3">
+            <img src="~/Content/Images/Placeholder.png" class="img-circle img-responsive hover-touch-type-oring" />
+            <div class="header-color">The @Model.Color switch will sound like this when the keys are touch-typed, and with an O-ring installed to dampen the noise.</div>
+        </div>
+    </div>
+</div>
