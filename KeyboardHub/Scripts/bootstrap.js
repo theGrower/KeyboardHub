@@ -2382,3 +2382,10 @@ $(document).ready(function () {
         }, 800);
     });
 });
+$(document).ready(function () {
+    $("#Button2").click(function () {
+        $("html, body").animate({
+            scrollTop: "0px"
+        }, 800);
+    });
+});
