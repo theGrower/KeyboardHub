@@ -4,87 +4,126 @@
     ViewBag.Title = "Details";
 }
 
-<h2>Details</h2>
+@*<h2>Details</h2>*@
+<h2 class="text-center text-bold header-color">The @Html.DisplayFor(model => model.Color) Switch</h2>
+<h3 class="lead text-center header-color">@Html.DisplayFor(model => model.Description)</h3>
+
 
 <div>
-    <h4>Switch</h4>
+    @*<h4>Switch</h4>*@
     <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Color)
-        </dt>
+    <p>
+        <table align="rigt" class="table">
+            <tr>
+                <th>
+                    <img src="@Html.DisplayFor(model => model.GIFPath)" />
+                </th>
+                <th>
+                    <img src="@Html.DisplayFor(model => model.GIFPath)" />
+                </th>
+                <th>
+                    <img src="@Html.DisplayFor(model => model.GIFPath)" />
+                </th>
+                <th>
+                    <img src="@Html.DisplayFor(model => model.GIFPath)" />
+                </th>
+                <th></th>
+            </tr>
+        </table>
+    </p>
+    <h2 class="text-center text-bold header-color">Buying options for the @Html.DisplayFor(model => model.Color) Switch</h2>
+    <h3 class="text-center text-bold header-color">PLACEHOLDER FOR AMAZON API SEARCH DATA</h3>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.SwitchID }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
 
-        <dd>
-            @Html.DisplayFor(model => model.Color)
-        </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Type)
-        </dt>
+    @*@{
+            ViewBag.Title = "Details";
+        }
 
-        <dd>
-            @Html.DisplayFor(model => model.Type)
-        </dd>
+        <h2>Details</h2>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.AccuationForce)
-        </dt>
+        <div>
+            <h4>Switch</h4>
+            <hr />
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.Color)
+                </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.AccuationForce)
-        </dd>
+                <dd>
+                    @Html.DisplayFor(model => model.Color)
+                </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Description)
-        </dt>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Type)
+                </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Description)
-        </dd>
+                <dd>
+                    @Html.DisplayFor(model => model.Type)
+                </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.TouchAudio)
-        </dt>
+                <dt>
+                    @Html.DisplayNameFor(model => model.AccuationForce)
+                </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.TouchAudio)
-        </dd>
+                <dd>
+                    @Html.DisplayFor(model => model.AccuationForce)
+                </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.TouchOringAudio)
-        </dt>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Description)
+                </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.TouchOringAudio)
-        </dd>
+                <dd>
+                    @Html.DisplayFor(model => model.Description)
+                </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.BottomAudio)
-        </dt>
+                <dt>
+                    @Html.DisplayNameFor(model => model.TouchAudio)
+                </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.BottomAudio)
-        </dd>
+                <dd>
+                    @Html.DisplayFor(model => model.TouchAudio)
+                </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.BottomOringAudio)
-        </dt>
+                <dt>
+                    @Html.DisplayNameFor(model => model.TouchOringAudio)
+                </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.BottomOringAudio)
-        </dd>
+                <dd>
+                    @Html.DisplayFor(model => model.TouchOringAudio)
+                </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.GIFPath)
-        </dt>
+                <dt>
+                    @Html.DisplayNameFor(model => model.BottomAudio)
+                </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.GIFPath)
-        </dd>
+                <dd>
+                    @Html.DisplayFor(model => model.BottomAudio)
+                </dd>
 
-    </dl>
-</div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.SwitchID }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
+                <dt>
+                    @Html.DisplayNameFor(model => model.BottomOringAudio)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.BottomOringAudio)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.GIFPath)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.GIFPath)
+                </dd>
+
+            </dl>
+        </div>
+        <p>
+            @Html.ActionLink("Edit", "Edit", new { id = Model.SwitchID }) |
+            @Html.ActionLink("Back to List", "Index")
+        </p>*@
