@@ -17,7 +17,6 @@ namespace KeyboardHub.Models
         public virtual DbSet<AspNetUserLogin> AspNetUserLogins { get; set; }
         public virtual DbSet<AspNetUser> AspNetUsers { get; set; }
         public virtual DbSet<Switch> Switches { get; set; }
-        public virtual DbSet<UserDetail> UserDetails { get; set; }
         public virtual DbSet<Favorite> Favorites { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
@@ -41,12 +40,6 @@ namespace KeyboardHub.Models
                 .HasMany(e => e.Favorites)
                 .WithRequired(e => e.AspNetUser1)
                 .HasForeignKey(e => e.AspNetUser)
-                .WillCascadeOnDelete(false);
-
-            modelBuilder.Entity<AspNetUser>()
-                .HasMany(e => e.UserDetails)
-                .WithRequired(e => e.AspNetUser)
-                .HasForeignKey(e => e.UserId)
                 .WillCascadeOnDelete(false);
         }
     }
