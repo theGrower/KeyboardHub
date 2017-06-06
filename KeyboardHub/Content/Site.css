@@ -35,10 +35,10 @@ div[class="row"] {
 	border: 1px dotted rgba(0, 0, 0, 0.5);
 }
 
-div[class^="col-"] {
 	/*REMOVE ME*/
+/*div[class^="col-"] {
 	background-color: rgba(255, 0, 0, 0.2);
-	border: 1px dotted rgba(0, 0, 0, 0.5);
+	border: 1px dotted rgba(0, 0, 0, 0.5);*/
 }
 .grid-titles{
 	text-align: center;
@@ -73,7 +73,7 @@ img{
 	overflow: hidden; 
 }
 
-[class*="col-"]{
+[class*="col-"]#p2{
 	margin-bottom: -99999px;
 	padding-bottom: 99999px;
 }
