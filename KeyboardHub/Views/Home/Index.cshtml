@@ -4,6 +4,11 @@
 
 <div id="P1">
     <h1 class="text-center text-bold header-color">Welcome to the Keyboard Hub.</h1>
+    <h6>
+        Why spend more money on a mechanical keyboard? As opposed to a membrane keyboard, mechanical boards have spring-loaded switches that can provide tactile and audible feedback
+        when the keys are pressed. Keystrokes are more pronounced, and you as a user have a more comfortable typing experience. These keyboards can be purchased with different
+        switches, which change how they keyboard feels and sounds, and are further 
+    </h6>
     <h3 class="lead text-center header-color">We aim to make the purchasing of your next mechanical keyboard easier on you.</h3>
     <p></p>
     <div id="InnerP1" class="text-center">
@@ -11,24 +16,24 @@
     </div>
 </div>
 <div id="Spacer"></div>
-
 <div id="P2">
-    <div class="row grid-titles">
-        <div class="col-xs-3">
-                <img id="Button2" src='@Url.Content("~/Content/Images/Placeholder.png")' />
+   <div class="row grid-titles">
+        <div class="col-xs-3 tabled">
+            <img id="Button2" src='@Url.Content("~/Content/Images/Placeholder.png")' />
         </div>
-        <div class="col-xs-3 ">
-            Clicky
+        <div class="col-xs-3 tabled">
+            <p class="table-cell-bottom">Clicky</p>
         </div>
-        <div class="col-xs-3">
-            Tactile
+        <div class="col-xs-3 tabled">
+            <p class="grid-titles table-cell-top">Typing Feedback</p>
+            <p class="table-cell-bottom">Tactile</p>
         </div>
-        <div class="col-xs-3">
-            Linear
+        <div class="col-xs-3 tabled">
+            <p class="table-cell-bottom">Linear</p>
         </div>
     </div>
     <div class="row ">
-        <div class="col-xs-3 grid-titles">
+        <div class="col-xs-3 grid-titles sidelabels">
             Light
         </div>
         <div class="col-xs-3">
@@ -48,8 +53,8 @@
         </div>
     </div>
     <div class="row ">
-        <div class="col-xs-3 grid-titles ">
-            Medium
+        <div class="col-xs-3 ">
+            <p class="grid-titles sidelabels">Medium</p>
         </div>
         <div class="col-xs-3">
             <a id="GreenSwitch" href='@Url.Action("Index", "Switches", new { id = 4 })'>
@@ -68,7 +73,7 @@
         </div>
     </div>
     <div class="row ">
-        <div class="col-xs-3 grid-titles ">
+        <div class="col-xs-3 grid-titles sidelabels">
             Heavy
         </div>
         <div class="col-xs-3">

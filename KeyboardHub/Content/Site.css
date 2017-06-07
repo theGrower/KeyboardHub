@@ -37,6 +37,7 @@ textarea {
 	text-align: center;
 	font-weight: bold;
 	color: #FFF;
+	font-size: 1.2em;
 }
 .text-bold{
 	font-weight:bold;
@@ -86,26 +87,30 @@ img{
 	}
 
 }
-@media (min-width: 767px){
-	#homeLink {
-		display: none;
-	}
-	#Spacer {
-		margin-bottom: 45px;
-	}
-	img.sepia {
-   -webkit-filter: sepia(100%);
-   -moz-filter: sepia(100%);
-   filter: sepia(100%);
-   transition: all 0.5s ease;
- }
+@media (min-width: 767px) {
+    #homeLink {
+        display: none;
+    }
 
- img.sepia:hover {
-   -webkit-filter: sepia(0%);
-   -moz-filter: sepia(0%);
-   filter: sepia(0%);
-   transition: all 0FF;.5s ease;
- }
+    #Spacer {
+        margin-bottom: 45px;
+    }
+
+    img.sepia {
+        -webkit-filter: sepia(100%);
+        -moz-filter: sepia(100%);
+        filter: sepia(100%);
+        transition: all 0.5s ease;
+    }
+
+        img.sepia:hover {
+            -webkit-filter: sepia(0%);
+            -moz-filter: sepia(0%);
+            filter: sepia(0%);
+            transition: all 0.5s ease;
+        }
 }
-
-
+.sidelabels{
+    line-height: 200px;
+    text-align: right;
+}
