@@ -37,7 +37,7 @@ textarea {
 	text-align: center;
 	font-weight: bold;
 	color: #FFF;
-	font-size: 1.2em;
+	font-size: 2em;
 }
 .text-bold{
 	font-weight:bold;
@@ -52,8 +52,6 @@ textarea {
 #P2{
 	margin-top:35px;
 	box-sizing: inherit;
-	width: 85%;
-	float:right;
 }
 #p1{
 	height:120%;
@@ -110,7 +108,7 @@ img{
             transition: all 0.5s ease;
         }
 }
-.sidelabels{
-    line-height: 200px;
-    text-align: right;
+img.resize {
+    height: 40;
+    width: auto;
 }
