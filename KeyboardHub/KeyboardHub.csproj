@@ -193,17 +193,11 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-<<<<<<< HEAD
-    <Content Include="Content\Images\Adam.jpg" />
-    <Content Include="Content\Images\Jeff.jpg" />
-    <Content Include="Content\Images\Joginder.jpg" />
-=======
     <Content Include="Content\Images\CroppedBigLogo.png" />
     <Content Include="Content\Images\KBHubLogo.png" />
     <Content Include="Content\Images\KbHubLogoWhite2.png" />
     <Content Include="Content\Images\KbHubLogoWhite3.png" />
     <Content Include="Content\Images\LogoNew.png" />
->>>>>>> origin/master
     <Content Include="Content\Images\Placeholder.png" />
     <Content Include="Content\Images\Texture.png" />
     <Content Include="favicon.ico" />
