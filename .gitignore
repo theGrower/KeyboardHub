@@ -46,3 +46,6 @@ Network Trash Folder
 Temporary Items
 .apdisk
 *.suo
+.vs/config/applicationhost.config
+*.config
+.vs/config/applicationhost.config
