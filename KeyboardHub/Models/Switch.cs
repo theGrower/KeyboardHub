@@ -37,5 +37,11 @@ namespace KeyboardHub.Models
 
         [StringLength(50)]
         public string GIFPath { get; set; }
+
+        public string HTML1 { get; set; }
+
+        public string HTML2 { get; set; }
+
+        public string HTML3 { get; set; }
     }
 }
