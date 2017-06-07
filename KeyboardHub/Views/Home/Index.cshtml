@@ -19,7 +19,7 @@
 <div id="P2">
    <div class="row grid-titles row-top">
         <div class="col-xs-3">
-            <img id="Button2" src='@Url.Content("~/Content/Images/KBHubLogoWhite2.png")' />
+            <img class="gridbutton" src='@Url.Content("~/Content/Images/CroppedBigLogo.png")' />
         </div>
         <div class="col-xs-3 ">
             <p>Clicky</p>
@@ -33,7 +33,7 @@
     </div>
     <div class="row ">
         <div class="col-xs-3 grid-titles sidelabels">
-            Light
+            <span class="left-text">Light</span>
         </div>
         <div class="col-xs-3">
             <a id="BlueSwitch" href='@Url.Action("Index", "Switches", new { id = 1 })'>
@@ -52,8 +52,8 @@
         </div>
     </div>
     <div class="row ">
-        <div class="col-xs-3 ">
-            <p class="grid-titles sidelabels">Medium</p>
+        <div class="col-xs-3 grid-titles sidelabels">
+            <span class="left-text">Medium</span>
         </div>
         <div class="col-xs-3">
             <a id="GreenSwitch" href='@Url.Action("Index", "Switches", new { id = 4 })'>
@@ -73,7 +73,7 @@
     </div>
     <div class="row ">
         <div class="col-xs-3 grid-titles sidelabels">
-            Heavy
+            <span class="left-text">Heavy</span>
         </div>
         <div class="col-xs-3">
             <a id="WhiteSwitch" href='@Url.Action("Index", "Switches", new { id = 7 })'>
