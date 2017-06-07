@@ -193,6 +193,9 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Images\Adam.jpg" />
+    <Content Include="Content\Images\Jeff.jpg" />
+    <Content Include="Content\Images\Joginder.jpg" />
     <Content Include="Content\Images\Placeholder.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
