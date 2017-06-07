@@ -3118,20 +3118,25 @@ fieldset[disabled] .btn-default.focus {
   background-color: #333;
 }
 .btn-primary {
-  color: #fff;
-  background-color: #031627;
   border-color: #fff;
+  color: #fff;
+  background-image: url("Images/Texture.png");
+  background-size: contain;
+  background-repeat: repeat;
 }
 .btn-primary:focus,
 .btn-primary.focus {
-  color: #fff;
-  background-color: #121b30;
-  border-color: #fff;
+   border-color: #fff;
+  background-image: url("Images/Texture.png");
+  background-size: contain;
+  background-repeat: repeat;
 }
 .btn-primary:hover {
   color: #fff;
   background-color: #121b30;
   border-color: #fff;
+  border-width: 3px;
+
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -3149,9 +3154,10 @@ fieldset[disabled] .btn-default.focus {
 .btn-primary:active.focus,
 .btn-primary.active.focus,
 .open > .dropdown-toggle.btn-primary.focus {
-  color: #fff;
-  background-color: #204d74;
-  border-color: #122b40;
+   border-color: #fff;
+  background-image: url("Images/Texture.png");
+  background-size: contain;
+  background-repeat: repeat;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -3263,9 +3269,10 @@ fieldset[disabled] .btn-success.focus {
 .btn-info:active.focus,
 .btn-info.active.focus,
 .open > .dropdown-toggle.btn-info.focus {
-  color: #fff;
-  background-color: #269abc;
-  border-color: #1b6d85;
+  border-color: #fff;
+  background-image: url("Images/Texture.png");
+  background-size: contain;
+  background-repeat: repeat;
 }
 .btn-info:active,
 .btn-info.active,
@@ -4593,8 +4600,10 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   color: #ccc;
 }
 .navbar-inverse {
-  background-color: #031627;
-  border-color: #e8e9fa;
+  border-color: #fff;
+  background-image: url("Images/Texture.png");
+  background-size: contain;
+  background-repeat: repeat;
 }
 .navbar-inverse .navbar-brand {
   color: #9d9d9d;
