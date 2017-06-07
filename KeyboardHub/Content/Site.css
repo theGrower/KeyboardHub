@@ -37,6 +37,7 @@ textarea {
 	text-align: center;
 	font-weight: bold;
 	color: #FFF;
+	font-size: 1.8em;
 }
 .text-bold{
 	font-weight:bold;
@@ -51,8 +52,6 @@ textarea {
 #P2{
 	margin-top:35px;
 	box-sizing: inherit;
-	width: 85%;
-	float:right;
 }
 #p1{
 	height:120%;
@@ -80,33 +79,49 @@ img{
 	height: 30px;
 }
 .navbar {min-height:30px !important;}
+.row-top{
+	max-height:50px;
+}
 @media (max-width: 767px) {
 	#Spacer {
 		padding: 30%;
 	}
-
+	.grid-titles{
+		font-size:1.2em;
+	}
+	.row-top{
+		max-height: 35px;
+	}
+	
 }
-@media (min-width: 767px){
+@media (min-width: 767px) {
 	#homeLink {
 		display: none;
 	}
+
 	#Spacer {
 		margin-bottom: 45px;
 	}
-	img.sepia {
-   -webkit-filter: sepia(100%);
-   -moz-filter: sepia(100%);
-   filter: sepia(100%);
-   transition: all 0.5s ease;
- }
 
- img.sepia:hover {
-   -webkit-filter: sepia(0%);
-   -moz-filter: sepia(0%);
-   filter: sepia(0%);
-   transition: all 0FF;.5s ease;
- }
+	img.sepia {
+		-webkit-filter: sepia(100%);
+		-moz-filter: sepia(100%);
+		filter: sepia(100%);
+		transition: all 0.5s ease;
+	}
+
+		img.sepia:hover {
+			-webkit-filter: sepia(0%);
+			-moz-filter: sepia(0%);
+			filter: sepia(0%);
+			transition: all 0.5s ease;
+		}
 }
+img.resize {
+	height: 33px;
+	width: auto;
+}
+<<<<<<< HEAD
 
 
 /*Sizing for bio pics*/
@@ -118,4 +133,15 @@ bio-img {
     display: block;
     width: auto;
     height: 50%;
+=======
+.gridbutton{
+	max-height: 100%;
+	width: auto;
+	max-width: 100%;
+	float:right;
+}
+.sepia{
+	border-radius:10px;
+	border: 2px solid #031627
+>>>>>>> origin/master
 }

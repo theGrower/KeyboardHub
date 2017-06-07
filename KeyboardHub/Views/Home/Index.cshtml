@@ -4,32 +4,40 @@
 
 <div id="P1">
     <h1 class="text-center text-bold header-color">Welcome to the Keyboard Hub.</h1>
+<<<<<<< HEAD
     <h3 class="lead text-center header-color">We aim to make the purchasing of your next mechanical keyboard easier on you.  Why choose a mechanical keyboard over your typical “rubber dome” keyboard? If you use your PC/laptop for any length of time for your job it can help you to type faster and more efficiently, also mechanical keyboards last longer.  If you’re a PC gamer they can make every key press that much faster and more responsive, a benefit in most any game you may play.</h3>
+=======
+    <h6>
+        Why spend more money on a mechanical keyboard? As opposed to a membrane keyboard, mechanical boards have spring-loaded switches that can provide tactile and audible feedback
+        when the keys are pressed. Keystrokes are more pronounced, and you as a user have a more comfortable typing experience. These keyboards can be purchased with different
+        switches, which change how they keyboard feels and sounds, and are further 
+    </h6>
+    <h3 class="lead text-center header-color">We aim to make the purchasing of your next mechanical keyboard easier on you.</h3>
+>>>>>>> refs/remotes/origin/Joginder
     <p></p>
     <div id="InnerP1" class="text-center">
         <p><button id="Button1" class="btn btn-primary btn-lg">Get Clackin'</button></p>
     </div>
 </div>
 <div id="Spacer"></div>
-
 <div id="P2">
-    <div class="row grid-titles">
+   <div class="row grid-titles row-top">
         <div class="col-xs-3">
-                <img id="Button2" src='@Url.Content("~/Content/Images/Placeholder.png")' />
+            <img class="gridbutton" src='@Url.Content("~/Content/Images/CroppedBigLogo.png")' />
         </div>
         <div class="col-xs-3 ">
-            Clicky
+            <p>Clicky</p>
         </div>
         <div class="col-xs-3">
-            Tactile
+            <p >Tactile</p>
         </div>
         <div class="col-xs-3">
-            Linear
+            <p >Linear</p>
         </div>
     </div>
     <div class="row ">
-        <div class="col-xs-3 grid-titles">
-            Light
+        <div class="col-xs-3 grid-titles sidelabels">
+            <span class="left-text">Light</span>
         </div>
         <div class="col-xs-3">
             <a id="BlueSwitch" href='@Url.Action("Index", "Switches", new { id = 1 })'>
@@ -48,8 +56,8 @@
         </div>
     </div>
     <div class="row ">
-        <div class="col-xs-3 grid-titles ">
-            Medium
+        <div class="col-xs-3 grid-titles sidelabels">
+            <span class="left-text">Medium</span>
         </div>
         <div class="col-xs-3">
             <a id="GreenSwitch" href='@Url.Action("Index", "Switches", new { id = 4 })'>
@@ -68,8 +76,8 @@
         </div>
     </div>
     <div class="row ">
-        <div class="col-xs-3 grid-titles ">
-            Heavy
+        <div class="col-xs-3 grid-titles sidelabels">
+            <span class="left-text">Heavy</span>
         </div>
         <div class="col-xs-3">
             <a id="WhiteSwitch" href='@Url.Action("Index", "Switches", new { id = 7 })'>
