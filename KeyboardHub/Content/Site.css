@@ -1,4 +1,4 @@
-﻿body {
+body {
 		padding-top: 50px;
 	padding-bottom: 20px;
 	background: url("https://i.imgur.com/VJ1Ktfe.jpg") no-repeat center center fixed; 
@@ -104,36 +104,23 @@ img{
 	}
 
 	img.sepia {
-		-webkit-filter: sepia(100%);
-		-moz-filter: sepia(100%);
-		filter: sepia(100%);
-		transition: all 0.5s ease;
+		-webkit-filter: brightness(50%);
+		-moz-filter: brightness(50%);
+		filter: brightness(50%);
+		transition: all 0.6s ease;
 	}
-
 		img.sepia:hover {
-			-webkit-filter: sepia(0%);
-			-moz-filter: sepia(0%);
-			filter: sepia(0%);
-			transition: all 0.5s ease;
+			-webkit-filter: brightness(100%);
+			-moz-filter: brightness(100%);
+			filter: brightness(100%);
+			transition: all 0.6s ease;
 		}
 }
 img.resize {
 	height: 33px;
 	width: auto;
 }
-<<<<<<< HEAD
 
-
-/*Sizing for bio pics*/
- #bio-pics {
-     max-height: 300px;
- }
-
-bio-img {
-    display: block;
-    width: auto;
-    height: 50%;
-=======
 .gridbutton{
 	max-height: 100%;
 	width: auto;
@@ -143,5 +130,8 @@ bio-img {
 .sepia{
 	border-radius:10px;
 	border: 2px solid #031627
->>>>>>> origin/master
+}
+.sidelabels{
+    display: flex;
+    align-items: center;
 }
