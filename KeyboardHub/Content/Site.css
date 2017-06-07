@@ -109,3 +109,13 @@ img{
 }
 
 
+/*Sizing for bio pics*/
+ #bio-pics {
+     max-height: 300px;
+ }
+
+bio-img {
+    display: block;
+    width: auto;
+    height: 50%;
+}
