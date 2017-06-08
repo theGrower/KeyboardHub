@@ -31,8 +31,11 @@
     </div>
     <div class="container body-content">
         @RenderBody()
+        
     </div>
-
+    <footer>
+        <div class="footer">@Html.ActionLink("Learn about the creators of this website", "About", "Home", routeValues: null, htmlAttributes: new { @class = "header-color" })</div>
+    </footer>
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @Scripts.Render("~bundles/scrollTo")
