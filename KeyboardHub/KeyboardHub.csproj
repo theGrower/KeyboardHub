@@ -178,10 +178,6 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\AspNetRole.cs" />
-    <Compile Include="Models\AspNetUser.cs" />
-    <Compile Include="Models\AspNetUserClaim.cs" />
-    <Compile Include="Models\AspNetUserLogin.cs" />
     <Compile Include="Models\Favorite.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\KeyboardHubDB.cs" />

@@ -21,6 +21,5 @@ namespace KeyboardHub.Models
         [Column(Order = 2)]
         public string AspNetUser { get; set; }
 
-        public virtual AspNetUser AspNetUser1 { get; set; }
     }
 }
