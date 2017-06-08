@@ -2452,4 +2452,11 @@ $(document).ready(function () {
         $("#Sound4")[0].pause();
     });
 });
-
+$(document).ready(function () {
+    $(document).ready(function () {
+        $(".hover-button").hover(
+            function () { $(this).addClass("hover"); },
+            function () { $(this).removeClass("hover"); }
+        );
+    });
+})

@@ -1,6 +1,6 @@
 body {
 		padding-top: 50px;
-	background: url("https://i.imgur.com/VJ1Ktfe.jpg") no-repeat center center fixed; 
+	background: url("http://i.imgur.com/9nzHk0A.png") no-repeat center center fixed; 
 	background-size: cover;
 }
 
@@ -71,7 +71,6 @@ img{
 }
 #InnerP1{
 	padding-bottom: 40%;
-	padding-top: 30%;
 }
 .navbar-nav > li > a, .navbar-brand {
 	padding-top:5px !important; padding-bottom:0px !important;
@@ -131,12 +130,12 @@ img.resize {
 	border: 2px solid #031627
 }
 .sidelabels{
-    display: flex;
-    align-items: center;
+	display: flex;
+	align-items: center;
 }
 
 .bio-pics{
-    max-height: 300px;
+	max-height: 300px;
 }
 
 .bio-img{
@@ -145,20 +144,27 @@ width: auto;
 max-width: 100%;
 }
 footer {
-    border-top: 2px solid white;
-    background-image: url("Images/Texture.png");
-    background-size: contain;
-    background-repeat: repeat;
-    margin: 13px 0px 0px 0px;
+	border-top: 2px solid white;
+	background-image: url("Images/Texture.png");
+	background-size: contain;
+	background-repeat: repeat;
+	margin: 13px 0px 0px 0px;
 }
 .footer{
-    display:table;
-    margin: 0 auto;
-    font-weight: bold;
+	display:table;
+	margin: 0 auto;
+	font-weight: bold;
 }
-.body-content{
-    min-height: 70%;
-    min-height: -webkit-calc(100% - 186px);
-    min-height: -moz-calc(100% - 186px);
-    min-height: calc(100% - 35px);
+.body-content {
+	min-height: 70%;
+	min-height: -webkit-calc(100% - 186px);
+	min-height: -moz-calc(100% - 186px);
+	min-height: calc(100% - 35px);
+}
+.hover{
+	 padding: 3px;
+	 background-color: #fff;
+}
+.maxheight{
+    max-width: 225px;
 }
