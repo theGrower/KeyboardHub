@@ -135,14 +135,14 @@ img.resize {
     align-items: center;
 }
 
-#bio-pics{
+.bio-pics{
     max-height: 300px;
 }
 
 .bio-img{
-    max-height: 100%;
-    max-width: 100%;
-    width: auto;
+max-height: 100%;
+width: auto;
+max-width: 100%;
 }
 footer {
     border-top: 2px solid white;

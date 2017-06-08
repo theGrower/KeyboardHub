@@ -2431,5 +2431,25 @@ $(document).ready(function () {
     }).mouseleave(function () {
         $("#Lgrey")[0].pause();
     });
+    $("#Pic1").mouseenter(function () {
+        $("#Sound1")[0].play();
+    }).mouseleave(function () {
+        $("#Sound1")[0].pause();
+    });
+    $("#Pic2").mouseenter(function () {
+        $("#Sound2")[0].play();
+    }).mouseleave(function () {
+        $("#Sound2")[0].pause();
+    });
+    $("#Pic3").mouseenter(function () {
+        $("#Sound3")[0].play();
+    }).mouseleave(function () {
+        $("#Sound3")[0].pause();
+    });
+    $("#Pic4").mouseenter(function () {
+        $("#Sound4")[0].play();
+    }).mouseleave(function () {
+        $("#Sound4")[0].pause();
+    });
 });
 

@@ -14,19 +14,19 @@
 <div id="switchtable">
     <div class="row">
         <div class="col-xs-3">
-            <img src="@Html.DisplayFor(model => model.GIFPath)" class="img-circle img-responsive hover-bottom-out" />
+            <img id="Pic1" src="@Html.DisplayFor(model => model.GIFPath)" class="img-circle img-responsive hover-bottom-out" />
             <div class="header-color">The @Model.Color switch will sound like this when the keys are bottomed out, or pressed all the way until the keycaps hit the bottom plate.</div>
         </div>
         <div class="col-xs-3">
-            <img src="@Html.DisplayFor(model => model.GIFPath)" class="img-circle img-responsive hover-touch-type" />
+            <img id="Pic2" src="@Html.DisplayFor(model => model.GIFPath)" class="img-circle img-responsive hover-touch-type" />
             <div class="header-color">The @Model.Color switch will sound like this when the keys are touch-typed, or pressed only with as much force as needed to activate the key.</div>
         </div>
         <div class="col-xs-3">
-            <img src="@Html.DisplayFor(model => model.GIFPath)" class="img-circle img-responsive hover-bottom-out-oring" />
+            <img id="Pic3" src="@Html.DisplayFor(model => model.GIFPath)" class="img-circle img-responsive hover-bottom-out-oring" />
             <div class="header-color">The @Model.Color switch will sound like this when the keys are bottomed out, but with an O-ring installed to dampen the noise.</div>
         </div>
         <div class="col-xs-3">
-            <img src="@Html.DisplayFor(model => model.GIFPath)" class="img-circle img-responsive hover-touch-type-oring" />
+            <img id="Pic4" src="@Html.DisplayFor(model => model.GIFPath)" class="img-circle img-responsive hover-touch-type-oring" />
             <div class="header-color">The @Model.Color switch will sound like this when the keys are touch-typed, and with an O-ring installed to dampen the noise.</div>
         </div>
     </div>
@@ -54,3 +54,19 @@
     </script>
     <gcse:search></gcse:search>
 </div>
+<audio id="Sound1" preload="auto">
+    <source src="@Url.Content(Model.BottomAudio)">
+    This browser does not support the HTML5 audio tag.
+</audio>
+<audio id="Sound2" preload="auto">
+    <source src="@Url.Content(Model.TouchAudio)">
+    This browser does not support the HTML5 audio tag.
+</audio>
+<audio id="Sound3" preload="auto">
+    <source src="@Url.Content(Model.BottomOringAudio)">
+    This browser does not support the HTML5 audio tag.
+</audio>
+<audio id="Sound4" preload="auto">
+    <source src="@Url.Content(Model.TouchOringAudio)">
+    This browser does not support the HTML5 audio tag.
+</audio>
