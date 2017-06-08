@@ -12,7 +12,7 @@ namespace KeyboardHub.Models
         public string PhoneNumber { get; set; }
         public bool TwoFactor { get; set; }
         public bool BrowserRemembered { get; set; }
-        public IList<Favorite> Favorites { get; set; }
+        //public IList<Favorite> Favorites { get; set; }
     }
 
     public class ManageLoginsViewModel
