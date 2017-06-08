@@ -1,6 +1,5 @@
 body {
 		padding-top: 50px;
-	padding-bottom: 20px;
 	background: url("https://i.imgur.com/VJ1Ktfe.jpg") no-repeat center center fixed; 
 	background-size: cover;
 }
@@ -104,16 +103,16 @@ img{
 	}
 
 	img.sepia {
-		-webkit-filter: brightness(50%);
-		-moz-filter: brightness(50%);
-		filter: brightness(50%);
-		transition: all 0.6s ease;
+		-webkit-filter: brightness(60%);
+		-moz-filter: brightness(60%);
+		filter: brightness(60%);
+		transition: all 0.4s ease;
 	}
 		img.sepia:hover {
 			-webkit-filter: brightness(100%);
 			-moz-filter: brightness(100%);
 			filter: brightness(100%);
-			transition: all 0.6s ease;
+			transition: all 0.4s ease;
 		}
 }
 img.resize {
@@ -136,12 +135,30 @@ img.resize {
     align-items: center;
 }
 
-#bio-pics{
+.bio-pics{
     max-height: 300px;
 }
 
 .bio-img{
-    max-height: 100%;
-    max-width: 100%;
-    width: auto;
+max-height: 100%;
+width: auto;
+max-width: 100%;
+}
+footer {
+    border-top: 2px solid white;
+    background-image: url("Images/Texture.png");
+    background-size: contain;
+    background-repeat: repeat;
+    margin: 13px 0px 0px 0px;
+}
+.footer{
+    display:table;
+    margin: 0 auto;
+    font-weight: bold;
+}
+.body-content{
+    min-height: 70%;
+    min-height: -webkit-calc(100% - 186px);
+    min-height: -moz-calc(100% - 186px);
+    min-height: calc(100% - 35px);
 }

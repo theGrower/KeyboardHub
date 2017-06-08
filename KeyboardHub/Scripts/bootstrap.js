@@ -2381,11 +2381,75 @@ $(document).ready(function () {
             scrollTop: $("#Spacer").offset().top
         }, 800);
     });
-});
-$(document).ready(function () {
     $("#Button2").click(function () {
         $("html, body").animate({
             scrollTop: "0px"
         }, 800);
     });
+    $("#BlueSwitch").mouseenter(function () {
+        $("#Blue")[0].play();
+    }).mouseleave(function () {
+        $("#Blue")[0].pause();
+    });
+    $("#BrownSwitch").mouseenter(function () {
+        $("#Brown")[0].play();
+    }).mouseleave(function () {
+        $("#Brown")[0].pause();
+    });
+    $("#RedSwitch").mouseenter(function () {
+        $("#Red")[0].play();
+    }).mouseleave(function () {
+        $("#Red")[0].pause();
+    });
+    $("#GreenSwitch").mouseenter(function () {
+        $("#Green")[0].play();
+    }).mouseleave(function () {
+        $("#Green")[0].pause();
+    });
+    $("#ClearSwitch").mouseenter(function () {
+        $("#Clear")[0].play();
+    }).mouseleave(function () {
+        $("#Clear")[0].pause();
+    });
+    $("#BlackSwitch").mouseenter(function () {
+        $("#Black")[0].play();
+    }).mouseleave(function () {
+        $("#Black")[0].pause();
+    });
+    $("#WhiteSwitch").mouseenter(function () {
+        $("#White")[0].play();
+    }).mouseleave(function () {
+        $("#White")[0].pause();
+    });
+    $("#TGreySwitch").mouseenter(function () {
+        $("#Tgrey")[0].play();
+    }).mouseleave(function () {
+        $("#Tgrey")[0].pause();
+    });
+    $("#LGreySwitch").mouseenter(function () {
+        $("#Lgrey")[0].play();
+    }).mouseleave(function () {
+        $("#Lgrey")[0].pause();
+    });
+    $("#Pic1").mouseenter(function () {
+        $("#Sound1")[0].play();
+    }).mouseleave(function () {
+        $("#Sound1")[0].pause();
+    });
+    $("#Pic2").mouseenter(function () {
+        $("#Sound2")[0].play();
+    }).mouseleave(function () {
+        $("#Sound2")[0].pause();
+    });
+    $("#Pic3").mouseenter(function () {
+        $("#Sound3")[0].play();
+    }).mouseleave(function () {
+        $("#Sound3")[0].pause();
+    });
+    $("#Pic4").mouseenter(function () {
+        $("#Sound4")[0].play();
+    }).mouseleave(function () {
+        $("#Sound4")[0].pause();
+    });
 });
+
