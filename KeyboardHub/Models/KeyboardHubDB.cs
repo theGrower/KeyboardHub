@@ -13,7 +13,7 @@ namespace KeyboardHub.Models
         }
 
         public virtual DbSet<Switch> Switches { get; set; }
-        public virtual DbSet<Favorite> Favorites { get; set; }
+        //public virtual DbSet<Favorite> Favorites { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
