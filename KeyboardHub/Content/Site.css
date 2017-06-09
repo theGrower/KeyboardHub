@@ -221,6 +221,7 @@ height: auto;
     padding:5px;
     color: white;
     border:solid 1px #808080;
+    border-width: 1px 0px;
     background-color: black;
     background-color:rgba(0, 0, 0, 0.4);
 
@@ -229,7 +230,13 @@ height: auto;
     text-align: center;
 
 }
-.borderchange{
-    border: solid 3px white;
-    background-color:rgba(0, 0, 0, 0.9);
+#togglebar:hover{
+    border-width: 2px 0px;
+    border-color: white;
+}
+#arsite-cse-box-1 .cse .gsc-control-cse, #arsite-cse-box-1 .gsc-control-cse {
+  background-color: transparent;
+  border: 0;
+  font-size: 12px;
+  line-height: 1.25;
 }

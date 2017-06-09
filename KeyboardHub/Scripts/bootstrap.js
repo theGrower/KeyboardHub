@@ -2476,11 +2476,6 @@ $(document).ready(function () {
 });
 $(document).ready(function () {
     $("#panel").hide();
-    $("#togglebar").mouseenter(function () {
-        $(this).addClass("borderchange");
-    }).mouseleave(function () {
-        $(this).removeClass("borderchange");
-    });
     $("#togglebar").click(function () {
         $("#panel").slideToggle("slow");
     });
