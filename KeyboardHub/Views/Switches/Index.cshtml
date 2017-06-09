@@ -13,19 +13,19 @@
 <h3 class="grid-titles">Hover over the keys to hear how they sound when pressed!</h3>
 <div id="switchtable">
     <div class="row">
-        <div class="col-sm-3">
+        <div class="col-xs-6 col-sm-3">
             <img id="Pic1" src="@Html.DisplayFor(model => model.GIFPath)" class="img-circle img-responsive hover-bottom-out hover-button" />
             <div class="header-color">The @Model.Color switch will sound like this when the keys are bottomed out, or pressed all the way until the keycaps hit the bottom plate.</div>
         </div>
-        <div class="col-sm-3">
+        <div class="col-xs-6 col-sm-3">
             <img id="Pic2" src="@Html.DisplayFor(model => model.GIFPath)" class="img-circle img-responsive hover-touch-type hover-button" />
             <div class="header-color">The @Model.Color switch will sound like this when the keys are touch-typed, or pressed only with as much force as needed to activate the key.</div>
         </div>
-        <div class="col-sm-3">
+        <div class="col-xs-6 col-sm-3">
             <img id="Pic3" src="@Html.DisplayFor(model => model.GIFPath)" class="img-circle img-responsive hover-bottom-out-oring hover-button" />
             <div class="header-color">The @Model.Color switch will sound like this when the keys are bottomed out, but with an O-ring installed to dampen the noise.</div>
         </div>
-        <div class="col-sm-3">
+        <div class="col-xs-6 col-sm-3">
             <img id="Pic4" src="@Html.DisplayFor(model => model.GIFPath)" class="img-circle img-responsive hover-touch-type-oring hover-button" />
             <div class="header-color">The @Model.Color switch will sound like this when the keys are touch-typed, and with an O-ring installed to dampen the noise.</div>
         </div>
@@ -33,23 +33,25 @@
 </div>
 <p></p>
 <h2 class="header-color text-center">Here are some keyboards with the @Model.Color switch.</h2>
-<div class="row maxheight">
-    <div class="col-xs-4">
-        <a href="@Model.HTML1">
-            <img class="img-circle img-responsive hover-button" src="http://i.imgur.com/4jtxRrx.jpg?1" />
+<div>
+<div class="row">
+    <div class="col-xs-4 col-size">
+        <a class= "img-responsive circle img-circle" href="@Model.HTML1">
+            <img class="img-circle img-responsive hover-button circle" src="http://i.imgur.com/4jtxRrx.jpg?1" />
         </a>
     </div>
-    <div class="col-xs-4">
-        <a href="@Model.HTML2">
-            <img class="img-circle img-responsive hover-button" src="http://i.imgur.com/jPfqQXJ.jpg?1" />
+    <div class="col-xs-4 col-size">
+        <a class="img-responsive circle img-circle " href="@Model.HTML2">
+            <img class="img-circle img-responsive hover-button circle" src="http://i.imgur.com/jPfqQXJ.jpg?1" />
         </a>
     </div>
-    <div class="col-xs-4">
-        <a href="@Model.HTML3">
-            <img class="img-circle img-responsive hover-button" src="http://i.imgur.com/Iv4BrmK.jpg?1" />
+    <div class="col-xs-4 col-size">
+        <a class="img-responsive circle img-circle" href="@Model.HTML3">
+            <img class="img-circle img-responsive hover-button circle" src="http://i.imgur.com/Iv4BrmK.jpg?1" />
         </a>
     </div>
 </div>
+    </div>
 <p></p>
 <h2 class="text-center text-bold header-color">If you would like to see what newegg.com or Amazon.com have to offer type your preferred switch color below and click "search."</h2>
 <div>
