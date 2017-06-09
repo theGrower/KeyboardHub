@@ -49,3 +49,7 @@ Temporary Items
 .vs/config/applicationhost.config
 *.config
 .vs/config/applicationhost.config
+.vs/config/applicationhost.config
+KeyboardHub/bin/KeyboardHub.dll
+KeyboardHub/bin/KeyboardHub.dll.config
+KeyboardHub/bin/KeyboardHub.pdb
