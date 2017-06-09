@@ -2457,7 +2457,7 @@ $(document).ready(function () {
         $(".hover-button").hover(
             function () { $(this).addClass("hover"); },
             function () { $(this).removeClass("hover"); }
-        );      
+        );
     });
 })
 $(document).ready(function () {
@@ -2479,4 +2479,8 @@ $(document).ready(function () {
     $("#togglebar").click(function () {
         $("#panel").slideToggle("slow");
     });
+});
+
+$(document).ready(function () {
+    $("#gsc-search-button").addClass("GBpadding");
 });

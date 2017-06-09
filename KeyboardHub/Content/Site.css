@@ -236,7 +236,11 @@ height: auto;
 }
 #arsite-cse-box-1 .cse .gsc-control-cse, #arsite-cse-box-1 .gsc-control-cse {
   background-color: transparent;
+  color:black;
   border: 0;
   font-size: 12px;
   line-height: 1.25;
+}
+.GBpadding{
+    padding: 11px 45px;
 }
