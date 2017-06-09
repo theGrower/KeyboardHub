@@ -1,0 +1,246 @@
+body {
+		padding-top: 50px;
+	background: url("http://i.imgur.com/9nzHk0A.png") no-repeat center center fixed; 
+	background-size: cover;
+    color: white;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+	white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+	max-width: 280px;
+}
+.header-color{
+	color: #FFF;
+}
+.vertical-text{
+	transform: rotate(270deg);
+	float: left;
+}
+
+
+.grid-titles{
+	text-align: center;
+	font-weight: bold;
+	color: #FFF;
+	font-size: 1.8em;
+}
+.text-bold{
+	font-weight:bold;
+}
+.big-font{
+	font-size: 8em;
+}
+.scalable{
+	max-height: 100%;
+	width:auto;
+}
+#P2{
+	margin-top:35px;
+    margin-bottom: 5%;
+	box-sizing: inherit;
+}
+#p1{
+	height:120%;
+	width: auto;
+}
+img{
+	display:block;
+	width: 100%;
+	height: auto;
+}
+.row{
+	overflow: hidden; 
+}
+
+[class*="col-"]#p2, [class*="col-"]#about{
+	margin-bottom: -99999px;
+	padding-bottom: 99999px;
+}
+#InnerP1{
+	padding-bottom: 60%;
+    padding-top: 20px;
+}
+.navbar-nav > li > a, .navbar-brand {
+	padding-top:5px !important; padding-bottom:0px !important;
+	height: 30px;
+}
+.navbar {min-height:30px !important;}
+.row-top{
+	max-height:50px;
+}
+@media (max-width: 767px) {
+	#Spacer {
+		padding: 30%;
+	}
+	.grid-titles{
+		font-size:1.2em;
+	}
+	.row-top{
+		max-height: 35px;
+	}
+	
+}
+@media (min-width: 767px) {
+	#homeLink {
+		display: none;
+	}
+
+	#Spacer {
+		margin-bottom: 45px;
+	}
+
+	img.sepia {
+		-webkit-filter: brightness(60%);
+		-moz-filter: brightness(60%);
+		filter: brightness(60%);
+		transition: all 0.4s ease;
+	}
+		img.sepia:hover {
+			-webkit-filter: brightness(100%);
+			-moz-filter: brightness(100%);
+			filter: brightness(100%);
+			transition: all 0.4s ease;
+		}
+}
+img.resize {
+	height: 33px;
+	width: auto;
+}
+
+.gridbutton{
+	max-height: 100%;
+	width: auto;
+	max-width: 100%;
+	float:right;
+}
+.sepia{
+	border-radius:10px;
+	border: 2px solid #031627
+}
+.sidelabels{
+	display: flex;
+	align-items: center;
+}
+
+.bio-pics{
+	max-height: 60%;
+}
+
+
+footer {
+	border-top: 2px solid white;
+	background-image: url("Images/Texture.png");
+	background-size: contain;
+	background-repeat: repeat;
+	margin: 13px 0px 0px 0px;
+}
+.footer{
+	display:table;
+	margin: 0 auto;
+	font-weight: bold;
+}
+.body-content {
+	min-height: 70%;
+	min-height: -webkit-calc(100% - 186px);
+	min-height: -moz-calc(100% - 186px);
+	min-height: calc(100% - 35px);
+}
+.hover{
+	 padding: 3px;
+	 background-color: #fff;
+}
+.circle{
+
+    width: 100%;
+    height: auto;
+    max-width:220px;
+    margin: 0 auto;
+}
+.bio-img{
+border-radius: 5px;
+width:100%;
+height: auto;
+}
+.break{
+    margin-top:20px;
+}
+.jeff, .joginder, .adam{
+    display: none;
+}
+#switchtable{
+    padding: 2.5%;
+}
+.splitter{
+    line-height: 3px;
+    background-color: white;
+}
+#desc{
+    font-size: 1.3em;
+}
+#switchalert{
+    padding-bottom: 30px;
+    text-decoration:underline;
+}
+#help{
+    padding-bottom: 2.5%;
+}
+@media (min-width:768px){
+    .bio-panel{
+    border: 3px solid white;
+    border-width: 0px 3px;
+    border-radius: 2px;
+    color: white;
+    
+}
+}
+@media (max-width:767px){
+    .bio-panel{
+    border: 3px solid white;
+    border-width: 3px 0px;
+    border-radius: 2px;
+    color: white;
+    
+}
+}
+#panel, #togglebar{
+    padding:5px;
+    color: white;
+    border:solid 1px #808080;
+    border-width: 1px 0px;
+    background-color: black;
+    background-color:rgba(0, 0, 0, 0.4);
+
+}
+#togglebar{
+    text-align: center;
+
+}
+#togglebar:hover{
+    border-width: 2px 0px;
+    border-color: white;
+}
+#arsite-cse-box-1 .cse .gsc-control-cse, #arsite-cse-box-1 .gsc-control-cse {
+  background-color: transparent;
+  color:black;
+  border: 0;
+  font-size: 12px;
+  line-height: 1.25;
+}
+.GBpadding{
+    padding: 11px 45px;
+}

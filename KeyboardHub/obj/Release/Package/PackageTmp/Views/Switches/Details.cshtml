@@ -1,0 +1,52 @@
+﻿@model KeyboardHub.Models.Switch
+
+@{
+    ViewBag.Title = "Details";
+}
+
+@*<h2>Details</h2>*@
+<h2 class="text-center text-bold header-color">The @Html.DisplayFor(model => model.Color) Switch</h2>
+<h3 class="lead text-center header-color">@Html.DisplayFor(model => model.Description)</h3>
+
+
+<div>
+    @*<h4>Switch</h4>*@
+    <hr />
+    <p>
+        <table align="right" class="table">
+            <tr>
+                <th>
+                    <img src="@Html.DisplayFor(model => model.GIFPath)" alt="switch" height="200" width="200" />
+                </th>
+                <th>
+                    <img src="@Html.DisplayFor(model => model.GIFPath)" alt="switch" height="200" width="200" />
+                </th>
+                <th>
+                    <img src="@Html.DisplayFor(model => model.GIFPath)" alt="switch" height="200" width="200" />
+                </th>
+                <th>
+                    <img src="@Html.DisplayFor(model => model.GIFPath)" alt="switch" height="200" width="200" />
+                </th>
+                <th></th>
+            </tr>
+        </table>
+    </p>
+    <h2 class="text-center text-bold header-color">GOOGLE SEARCH</h2>
+    <div>
+        <script>
+            (function () {
+                var cx = '015823483312890218464:geplttnc5jc';
+                var gcse = document.createElement('script');
+                gcse.type = 'text/javascript';
+                gcse.async = true;
+                gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(gcse, s);
+            })();
+        </script>
+        <gcse:search>@Model.Color</gcse:search>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.SwitchID }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
