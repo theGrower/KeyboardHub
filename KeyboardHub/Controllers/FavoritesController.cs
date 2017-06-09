@@ -18,8 +18,7 @@ namespace KeyboardHub.Controllers
         // GET: Favorites
         public async Task<ActionResult> Index()
         {
-            var favorites = db.Favorites.Include(f => f.AspNetUser1);
-            return View(await favorites.ToListAsync());
+            return View(await db.Favorites.ToListAsync());
         }
 
         // GET: Favorites/Details/5
@@ -40,7 +39,6 @@ namespace KeyboardHub.Controllers
         // GET: Favorites/Create
         public ActionResult Create()
         {
-            ViewBag.AspNetUser = new SelectList(db.AspNetUsers, "Id", "Email");
             return View();
         }
 
@@ -58,7 +56,6 @@ namespace KeyboardHub.Controllers
                 return RedirectToAction("Index");
             }
 
-            ViewBag.AspNetUser = new SelectList(db.AspNetUsers, "Id", "Email", favorite.AspNetUser);
             return View(favorite);
         }
 
@@ -74,7 +71,6 @@ namespace KeyboardHub.Controllers
             {
                 return HttpNotFound();
             }
-            ViewBag.AspNetUser = new SelectList(db.AspNetUsers, "Id", "Email", favorite.AspNetUser);
             return View(favorite);
         }
 
@@ -91,7 +87,6 @@ namespace KeyboardHub.Controllers
                 await db.SaveChangesAsync();
                 return RedirectToAction("Index");
             }
-            ViewBag.AspNetUser = new SelectList(db.AspNetUsers, "Id", "Email", favorite.AspNetUser);
             return View(favorite);
         }
 
