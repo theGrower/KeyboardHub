@@ -7,11 +7,14 @@
     WRITE JAVASCRIPT FOR HOVER ANIMATION
     FAVORITES UNDER GRID*@
 <div>
-    <div class="jumbotron"><h1 class="grid-titles">Cherry MX @Model.Color</h1></div>
-    <h2 class="grid-titles">@Model.Description</h2>
+    <div class="jumbotron">
+        <h1 class="grid-titles">Cherry MX @Model.Color</h1>
+        <h3 id="desc" class="header-color text-center">@Model.Description</h3>
+    </div>
 </div>
-<h3 class="grid-titles">Hover over the keys to hear how they sound when pressed!</h3>
+<hr> />
 <div id="switchtable">
+    <h3 id="switchalert" class="grid-titles">Hover over the keys to hear how they sound when pressed!</h3>
     <div class="row">
         <div class="col-xs-6 col-sm-3">
             <img id="Pic1" src="@Html.DisplayFor(model => model.GIFPath)" class="img-circle img-responsive hover-bottom-out hover-button" />
@@ -31,40 +34,40 @@
         </div>
     </div>
 </div>
-<p></p>
-<h2 class="header-color text-center">Here are some keyboards with the @Model.Color switch.</h2>
-<div>
-<div class="row">
-    <div class="col-xs-4 col-size">
-        <a class= "img-responsive circle img-circle" href="@Model.HTML1">
-            <img class="img-circle img-responsive hover-button circle" src="http://i.imgur.com/4jtxRrx.jpg?1" />
-        </a>
-    </div>
-    <div class="col-xs-4 col-size">
-        <a class="img-responsive circle img-circle " href="@Model.HTML2">
-            <img class="img-circle img-responsive hover-button circle" src="http://i.imgur.com/jPfqQXJ.jpg?1" />
-        </a>
-    </div>
-    <div class="col-xs-4 col-size">
-        <a class="img-responsive circle img-circle" href="@Model.HTML3">
-            <img class="img-circle img-responsive hover-button circle" src="http://i.imgur.com/Iv4BrmK.jpg?1" />
-        </a>
+<hr> />
+<h2 class="header-color text-center">Purchasing options for @Model.Color switch keyboards</h2>
+<div id="help">
+    <div class="row">
+        <div class="col-xs-4 col-size">
+            <a class="img-responsive circle img-circle" href="@Model.HTML1">
+                <img class="img-circle img-responsive hover-button circle" src="http://i.imgur.com/4jtxRrx.jpg?1" />
+            </a>
+        </div>
+        <div class="col-xs-4 col-size">
+            <a class="img-responsive circle img-circle " href="@Model.HTML2">
+                <img class="img-circle img-responsive hover-button circle" src="http://i.imgur.com/jPfqQXJ.jpg?1" />
+            </a>
+        </div>
+        <div class="col-xs-4 col-size">
+            <a class="img-responsive circle img-circle" href="@Model.HTML3">
+                <img class="img-circle img-responsive hover-button circle" src="http://i.imgur.com/Iv4BrmK.jpg?1" />
+            </a>
+        </div>
     </div>
 </div>
-    </div>
-<p></p>
+<hr />
 <h2 class="text-center text-bold header-color">If you would like to see what newegg.com or Amazon.com have to offer type your preferred switch color below and click "search."</h2>
 <div>
     <script>
-            (function () {
-                var cx = '015823483312890218464:geplttnc5jc';
-                var gcse = document.createElement('script');
-                gcse.type = 'text/javascript';
-                gcse.async = true;
-                gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-                var s = document.getElementsByTagName('script')[0];
-                s.parentNode.insertBefore(gcse, s);
-            })();
+        (function () {
+            var cx = '015823483312890218464:geplttnc5jc';
+            var gcse = document.createElement('script');
+            gcse.type = 'text/javascript';
+            gcse.async = true;
+            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(gcse, s);
+        })();
     </script>
     <gcse:search></gcse:search>
 </div>

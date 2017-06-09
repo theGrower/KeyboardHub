@@ -2457,20 +2457,31 @@ $(document).ready(function () {
         $(".hover-button").hover(
             function () { $(this).addClass("hover"); },
             function () { $(this).removeClass("hover"); }
-        );
+        );      
     });
 })
 $(document).ready(function () {
 
-    $(".jeff").fadeIn("2000", function () {
+    $(".jeff").fadeIn(850, function () {
 
-        $(".joginder").fadeIn("4000", function () {
+        $(".joginder").fadeIn(850, function () {
 
-            $(".adam").fadeIn("6000", function () {
+            $(".adam").fadeIn(850, function () {
 
             });
 
         });
 
+    });
+});
+$(document).ready(function () {
+    $("#panel").hide();
+    $("#togglebar").mouseenter(function () {
+        $(this).addClass("borderchange");
+    }).mouseleave(function () {
+        $(this).removeClass("borderchange");
+    });
+    $("#togglebar").click(function () {
+        $("#panel").slideToggle("slow");
     });
 });

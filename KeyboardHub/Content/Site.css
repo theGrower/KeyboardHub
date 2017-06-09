@@ -2,6 +2,7 @@ body {
 		padding-top: 50px;
 	background: url("http://i.imgur.com/9nzHk0A.png") no-repeat center center fixed; 
 	background-size: cover;
+    color: white;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -50,6 +51,7 @@ textarea {
 }
 #P2{
 	margin-top:35px;
+    margin-bottom: 5%;
 	box-sizing: inherit;
 }
 #p1{
@@ -70,7 +72,8 @@ img{
 	padding-bottom: 99999px;
 }
 #InnerP1{
-	padding-bottom: 40%;
+	padding-bottom: 60%;
+    padding-top: 20px;
 }
 .navbar-nav > li > a, .navbar-brand {
 	padding-top:5px !important; padding-bottom:0px !important;
@@ -168,14 +171,6 @@ footer {
     max-width:220px;
     margin: 0 auto;
 }
-.bio-panel{
-    border: 3px solid white;
-    border-width: 0px 3px;
-    border-radius: 2px;
-    color: white;
-    
-}
-
 .bio-img{
 border-radius: 5px;
 width:100%;
@@ -186,4 +181,55 @@ height: auto;
 }
 .jeff, .joginder, .adam{
     display: none;
+}
+#switchtable{
+    padding: 2.5%;
+}
+.splitter{
+    line-height: 3px;
+    background-color: white;
+}
+#desc{
+    font-size: 1.3em;
+}
+#switchalert{
+    padding-bottom: 30px;
+    text-decoration:underline;
+}
+#help{
+    padding-bottom: 2.5%;
+}
+@media (min-width:768px){
+    .bio-panel{
+    border: 3px solid white;
+    border-width: 0px 3px;
+    border-radius: 2px;
+    color: white;
+    
+}
+}
+@media (max-width:767px){
+    .bio-panel{
+    border: 3px solid white;
+    border-width: 3px 0px;
+    border-radius: 2px;
+    color: white;
+    
+}
+}
+#panel, #togglebar{
+    padding:5px;
+    color: white;
+    border:solid 1px #808080;
+    background-color: black;
+    background-color:rgba(0, 0, 0, 0.4);
+
+}
+#togglebar{
+    text-align: center;
+
+}
+.borderchange{
+    border: solid 3px white;
+    background-color:rgba(0, 0, 0, 0.9);
 }
