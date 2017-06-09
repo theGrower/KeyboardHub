@@ -53,3 +53,5 @@ Temporary Items
 KeyboardHub/bin/KeyboardHub.dll
 KeyboardHub/bin/KeyboardHub.dll.config
 KeyboardHub/bin/KeyboardHub.pdb
+.vs/config/applicationhost.config
+KeyboardHub/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache

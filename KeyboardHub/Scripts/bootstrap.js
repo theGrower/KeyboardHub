@@ -2460,3 +2460,17 @@ $(document).ready(function () {
         );
     });
 })
+$(document).ready(function () {
+
+    $(".jeff").fadeIn("2000", function () {
+
+        $(".joginder").fadeIn("4000", function () {
+
+            $(".adam").fadeIn("6000", function () {
+
+            });
+
+        });
+
+    });
+});

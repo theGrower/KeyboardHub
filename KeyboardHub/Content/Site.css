@@ -184,3 +184,6 @@ height: auto;
 .break{
     margin-top:20px;
 }
+.jeff, .joginder, .adam{
+    display: none;
+}
