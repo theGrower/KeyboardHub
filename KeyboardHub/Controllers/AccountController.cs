@@ -13,6 +13,7 @@ using KeyboardHub.Models;
 namespace KeyboardHub.Controllers
 {
     [Authorize]
+    [RequireHttps]
     public class AccountController : Controller
     {
         private ApplicationSignInManager _signInManager;
@@ -55,6 +56,7 @@ namespace KeyboardHub.Controllers
         //
         // GET: /Account/Login
         [AllowAnonymous]
+        [RequireHttps]
         public ActionResult Login(string returnUrl)
         {
             ViewBag.ReturnUrl = returnUrl;
@@ -66,6 +68,7 @@ namespace KeyboardHub.Controllers
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
+        [RequireHttps]
         public async Task<ActionResult> Login(LoginViewModel model, string returnUrl)
         {
             if (!ModelState.IsValid)
@@ -137,6 +140,7 @@ namespace KeyboardHub.Controllers
         //
         // GET: /Account/Register
         [AllowAnonymous]
+        [RequireHttps]
         public ActionResult Register()
         {
             return View();
@@ -147,6 +151,7 @@ namespace KeyboardHub.Controllers
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
+        [RequireHttps]
         public async Task<ActionResult> Register(RegisterViewModel model)
         {
             if (ModelState.IsValid)
@@ -188,6 +193,7 @@ namespace KeyboardHub.Controllers
         //
         // GET: /Account/ForgotPassword
         [AllowAnonymous]
+        [RequireHttps]
         public ActionResult ForgotPassword()
         {
             return View();
@@ -198,6 +204,7 @@ namespace KeyboardHub.Controllers
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
+        [RequireHttps]
         public async Task<ActionResult> ForgotPassword(ForgotPasswordViewModel model)
         {
             if (ModelState.IsValid)
@@ -224,6 +231,7 @@ namespace KeyboardHub.Controllers
         //
         // GET: /Account/ForgotPasswordConfirmation
         [AllowAnonymous]
+        [RequireHttps]
         public ActionResult ForgotPasswordConfirmation()
         {
             return View();
@@ -232,6 +240,7 @@ namespace KeyboardHub.Controllers
         //
         // GET: /Account/ResetPassword
         [AllowAnonymous]
+        [RequireHttps]
         public ActionResult ResetPassword(string code)
         {
             return code == null ? View("Error") : View();
@@ -242,6 +251,7 @@ namespace KeyboardHub.Controllers
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
+        [RequireHttps]
         public async Task<ActionResult> ResetPassword(ResetPasswordViewModel model)
         {
             if (!ModelState.IsValid)
@@ -266,6 +276,7 @@ namespace KeyboardHub.Controllers
         //
         // GET: /Account/ResetPasswordConfirmation
         [AllowAnonymous]
+        [RequireHttps]
         public ActionResult ResetPasswordConfirmation()
         {
             return View();
@@ -276,6 +287,7 @@ namespace KeyboardHub.Controllers
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
+        [RequireHttps]
         public ActionResult ExternalLogin(string provider, string returnUrl)
         {
             // Request a redirect to the external login provider
@@ -320,6 +332,7 @@ namespace KeyboardHub.Controllers
         //
         // GET: /Account/ExternalLoginCallback
         [AllowAnonymous]
+        [RequireHttps]
         public async Task<ActionResult> ExternalLoginCallback(string returnUrl)
         {
             var loginInfo = await AuthenticationManager.GetExternalLoginInfoAsync();
@@ -352,6 +365,7 @@ namespace KeyboardHub.Controllers
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
+        [RequireHttps]
         public async Task<ActionResult> ExternalLoginConfirmation(ExternalLoginConfirmationViewModel model, string returnUrl)
         {
             if (User.Identity.IsAuthenticated)
@@ -389,6 +403,7 @@ namespace KeyboardHub.Controllers
         // POST: /Account/LogOff
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [RequireHttps]
         public ActionResult LogOff()
         {
             AuthenticationManager.SignOut(DefaultAuthenticationTypes.ApplicationCookie);
@@ -398,6 +413,7 @@ namespace KeyboardHub.Controllers
         //
         // GET: /Account/ExternalLoginFailure
         [AllowAnonymous]
+        [RequireHttps]
         public ActionResult ExternalLoginFailure()
         {
             return View();

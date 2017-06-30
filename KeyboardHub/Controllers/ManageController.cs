@@ -215,6 +215,7 @@ namespace KeyboardHub.Controllers
 
         //
         // GET: /Manage/ChangePassword
+        [RequireHttps]
         public ActionResult ChangePassword()
         {
             return View();
@@ -224,6 +225,7 @@ namespace KeyboardHub.Controllers
         // POST: /Manage/ChangePassword
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [RequireHttps]
         public async Task<ActionResult> ChangePassword(ChangePasswordViewModel model)
         {
             if (!ModelState.IsValid)
@@ -246,6 +248,7 @@ namespace KeyboardHub.Controllers
 
         //
         // GET: /Manage/SetPassword
+        [RequireHttps]
         public ActionResult SetPassword()
         {
             return View();
@@ -255,6 +258,7 @@ namespace KeyboardHub.Controllers
         // POST: /Manage/SetPassword
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [RequireHttps]
         public async Task<ActionResult> SetPassword(SetPasswordViewModel model)
         {
             if (ModelState.IsValid)
@@ -278,6 +282,7 @@ namespace KeyboardHub.Controllers
 
         //
         // GET: /Manage/ManageLogins
+        [RequireHttps]
         public async Task<ActionResult> ManageLogins(ManageMessageId? message)
         {
             ViewBag.StatusMessage =
@@ -303,6 +308,7 @@ namespace KeyboardHub.Controllers
         // POST: /Manage/LinkLogin
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [RequireHttps]
         public ActionResult LinkLogin(string provider)
         {
             // Request a redirect to the external login provider to link a login for the current user
